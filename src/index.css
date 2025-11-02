@@ -8,54 +8,63 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 210 20% 15%;
+    /* Palette bois authentique */
+    --background: 40 29% 97%; /* Blanc cassé #F9F8F6 */
+    --foreground: 25 35% 32%; /* Bois foncé #6E4E37 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 20% 15%;
+    --card: 40 29% 97%;
+    --card-foreground: 25 35% 32%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 20% 15%;
+    --popover: 40 29% 97%;
+    --popover-foreground: 25 35% 32%;
 
-    /* Professional wood blue - main brand color */
-    --primary: 210 65% 32%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 210 65% 45%;
-    --primary-dark: 210 65% 22%;
+    /* Bleu profond - couleur principale */
+    --primary: 210 63% 19%; /* #11324D */
+    --primary-foreground: 40 29% 97%;
+    --primary-light: 210 63% 30%;
+    --primary-dark: 210 63% 12%;
 
-    /* Warm wood accent */
-    --secondary: 30 45% 50%;
-    --secondary-foreground: 0 0% 100%;
-    --secondary-light: 30 45% 65%;
+    /* Bois clair - accent chaleureux */
+    --secondary: 37 40% 75%; /* #D9C5A6 */
+    --secondary-foreground: 25 35% 32%;
+    --secondary-light: 37 40% 85%;
+    --secondary-dark: 37 40% 65%;
 
-    /* Steel grey */
-    --muted: 210 10% 88%;
-    --muted-foreground: 210 10% 40%;
+    /* Bois chocolat */
+    --wood-dark: 25 35% 32%; /* #6E4E37 */
+    --wood-light: 37 40% 75%; /* #D9C5A6 */
 
-    --accent: 30 45% 50%;
-    --accent-foreground: 0 0% 100%;
+    /* Gris acier */
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 33%; /* #555555 */
+
+    --accent: 37 40% 75%;
+    --accent-foreground: 25 35% 32%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 40 29% 97%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 210 65% 32%;
+    --border: 37 20% 85%;
+    --input: 37 20% 85%;
+    --ring: 210 63% 19%;
 
     --radius: 0.75rem;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 65% 32%), hsl(210 65% 22%));
-    --gradient-secondary: linear-gradient(135deg, hsl(30 45% 50%), hsl(30 55% 40%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 65% 32% / 0.95), hsl(210 65% 22% / 0.9));
+    /* Gradients bois */
+    --gradient-primary: linear-gradient(135deg, hsl(210 63% 19%), hsl(210 63% 12%));
+    --gradient-secondary: linear-gradient(135deg, hsl(37 40% 75%), hsl(37 40% 65%));
+    --gradient-wood: linear-gradient(135deg, hsl(25 35% 32%), hsl(25 35% 20%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 63% 19% / 0.92), hsl(25 35% 32% / 0.88));
     
-    /* Shadows */
-    --shadow-soft: 0 2px 20px -5px hsl(210 65% 32% / 0.1);
-    --shadow-medium: 0 4px 30px -5px hsl(210 65% 32% / 0.15);
-    --shadow-strong: 0 10px 40px -10px hsl(210 65% 32% / 0.25);
+    /* Shadows élégantes */
+    --shadow-soft: 0 2px 20px -5px hsl(25 35% 32% / 0.08);
+    --shadow-medium: 0 4px 30px -5px hsl(25 35% 32% / 0.12);
+    --shadow-strong: 0 10px 40px -10px hsl(25 35% 32% / 0.2);
+    --shadow-wood: 0 8px 32px -8px hsl(25 35% 32% / 0.25);
     
-    /* Animation */
+    /* Animation fluide */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
 

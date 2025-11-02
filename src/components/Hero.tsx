@@ -37,7 +37,7 @@ const Hero = () => {
             <Button
               size="lg"
               onClick={() => scrollToSection("devis")}
-              className="bg-secondary hover:bg-secondary-light text-lg px-8 py-6"
+              className="bg-secondary hover:bg-secondary-dark text-secondary-foreground text-lg px-8 py-6 shadow-wood transition-all duration-300 hover:scale-105"
             >
               Demander un devis
               <ArrowRight className="ml-2" />
@@ -46,7 +46,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection("boutique")}
-              className="bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-8 py-6"
+              className="bg-white/10 backdrop-blur-sm border-2 border-white/40 text-white hover:bg-white/20 hover:border-white/60 text-lg px-8 py-6 transition-all duration-300 hover:scale-105"
             >
               Voir la boutique
             </Button>
